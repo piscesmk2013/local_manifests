@@ -47,6 +47,11 @@
   <project name="vendor_aosp" path="vendor/aosp" remote="pisces" revision="twelve-plus" />
 <!-- Custom Pixel -->
 
+<!-- Theme Core -->
+  <project name="external_colorkt" path="external/colorkt" remote="pisces" revision="twelve" />
+  <project name="external_themelib" path="external/themelib" remote="pisces" revision="twelve" />
+<!-- Theme Core -->
+
 <!-- EROFS -->
   <remove-project name="build" />
   <project name="build_make" path="build/make" remote="pisces" revision="twelve" >
