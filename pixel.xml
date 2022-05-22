@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="ssh://git@github.com/piscesmk2013" name="pisces" />
+  <remote fetch="https://github.com/piscesmk2013" name="custom-device" />
+  <remote fetch="https://github.com/kdrag0n" name="custom-kernel-clang" />
+  <remote fetch="https://github.com/Hikari-no-Tenshi" name="HT" />
+  <remote fetch="https://github.com/yaap" name="yaap" />
+  <remote fetch="https://gitlab.com/zlatanr" name="dora-clang" />
+  <remote fetch="https://gitlab.com" name="gitlab" />
+
+<!-- Caf Hardware -->
+  <remove-project name="hardware_qcom-caf_sm8150_audio" />
+  <remove-project name="hardware_qcom-caf_sm8150_display" />
+  <remove-project name="hardware_qcom-caf_sm8150_media" />
+  <remove-project name="vendor_qcom_opensource_commonsys_display" />
+  <remove-project name="vendor_qcom_opensource_commonsys-intf_display" />
+  <remove-project name="vendor_qcom_opensource_commonsys_system_bt" />
+  <remove-project name="vendor_qcom_opensource_commonsys_bluetooth_ext" />
+  <project name="hardware_qcom-caf_sm8150_audio" path="hardware/qcom-caf/sm8150/audio" remote="pisces" revision="twelve" />
+  <project name="hardware_qcom-caf_sm8150_display" path="hardware/qcom-caf/sm8150/display" remote="pisces" revision="twelve" />
+  <project name="hardware_qcom-caf_sm8150_media" path="hardware/qcom-caf/sm8150/media" remote="pisces" revision="twelve" />
+  <project name="vendor_qcom_opensource_commonsys_display" path="vendor/qcom/opensource/commonsys/display" remote="pisces" revision="twelve" />
+  <project name="vendor_qcom_opensource_commonsys-intf_display" path="vendor/qcom/opensource/commonsys-intf/display" remote="pisces" revision="twelve" />
+  <project name="vendor_qcom_opensource_commonsys_system_bt" path="vendor/qcom/opensource/commonsys/system/bt" remote="pisces" revision="twelve" />
+  <project name="vendor_qcom_opensource_commonsys_bluetooth_ext" path="vendor/qcom/opensource/commonsys/bluetooth_ext" remote="pisces" revision="twelve" />
+<!-- Caf Hardware -->
+
+  <remove-project name="platform/system/memory/lmkd" />
+  <project name="system_memory_lmkd" path="system/memory/lmkd" remote="yaap" revision="twelve" />
+
+<!-- Custom Pixel -->
+  <remove-project name="device_custom_sepolicy" />
+  <project name="device_custom_sepolicy" path="device/custom/sepolicy" remote="pisces" revision="twelve" />
+  <remove-project name="frameworks_base" />
+  <project name="frameworks_base" path="frameworks/base" remote="pisces" revision="twelve-plus" />
+  <remove-project name="frameworks_av" />
+  <project name="frameworks_av" path="frameworks/av" remote="pisces" revision="twelve-plus" />
+  <remove-project name="packages_apps_Settings" />
+  <project name="packages_apps_Settings" path="packages/apps/Settings" remote="pisces" revision="twelve-plus" />
+  <remove-project name="packages_apps_Updates" />
+  <project name="packages_apps_Updates" path="packages/apps/Updates" remote="pisces" revision="twelve" />
+  <remove-project name="packages_apps_CarrierConfig" />
+  <project name="packages_apps_CarrierConfig" path="packages/apps/CarrierConfig" remote="pisces" revision="twelve" />
+  <remove-project name="frameworks_opt_telephony" />
+  <project name="frameworks_opt_telephony" path="frameworks/opt/telephony" remote="pisces" revision="twelve" />
+  <remove-project name="vendor_aosp" />
+  <project name="vendor_aosp" path="vendor/aosp" remote="pisces" revision="twelve-plus" />
+<!-- Custom Pixel -->
+
+<!-- EROFS -->
+  <remove-project name="build" />
+  <project name="build_make" path="build/make" remote="pisces" revision="twelve" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <remove-project name="platform/external/erofs-utils" />
+  <project name="external_erofs-utils" path="external/erofs-utils" remote="yaap" revision="twelve" />
+
+  <remove-project name="system_extras" />
+  <project name="system_extras" path="system/extras" remote="pisces" revision="twelve" />
+<!-- EROFS -->
+
+<!-- Clang -->
+  <project clone-depth="1" name="yaosp/prebuilts_clang_host_linux-x86_clang-r450784b" path="prebuilts/clang/host/linux-x86/clang-r450784b" remote="gitlab" revision="master" />
+<!-- Clang -->
+
+</manifest>
