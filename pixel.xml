@@ -47,6 +47,10 @@
   <project name="vendor_aosp" path="vendor/aosp" remote="pisces" revision="twelve-plus" />
 <!-- Custom Pixel -->
 
+<!-- Game Space -->
+  <project name="packages_apps_GameSpace" path="packages/apps/GameSpace" remote="pisces" revision="main" />
+<!-- Game Space -->
+
 <!-- Theme Core -->
   <project name="external_colorkt" path="external/colorkt" remote="pisces" revision="twelve" />
   <project name="external_themelib" path="external/themelib" remote="pisces" revision="twelve" />
