@@ -39,6 +39,8 @@
   </project>
   <remove-project name="system_netd" />
   <project name="system_netd" path="system/netd" remote="pisces" revision="twelve" />
+  <remove-project name="system_vold" />
+  <project name="system_vold" path="system/vold" remote="pisces" revision="twelve" />
   <remove-project name="bootable_recovery" />
   <project name="bootable_recovery" path="bootable/recovery" remote="pisces" revision="twelve" />
   <remove-project name="device_custom_sepolicy" />
