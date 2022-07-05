@@ -51,6 +51,8 @@
   <project name="frameworks_base" path="frameworks/base" remote="pisces" revision="twelve-plus" />
   <remove-project name="frameworks_av" />
   <project name="frameworks_av" path="frameworks/av" remote="pisces" revision="twelve-plus" />
+  <remove-project name="frameworks_native" />
+  <project name="frameworks_native" path="frameworks/native" remote="pisces" revision="twelve-plus" />
   <remove-project name="packages_apps_Settings" />
   <project name="packages_apps_Settings" path="packages/apps/Settings" remote="pisces" revision="twelve-plus" />
   <remove-project name="packages_apps_Updates" />
