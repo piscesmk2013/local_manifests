@@ -52,6 +52,8 @@
   <project name="frameworks_opt_telephony" path="frameworks/opt/telephony" remote="pisces" revision="twelve" />
   <remove-project name="vendor_aosp" />
   <project name="vendor_aosp" path="vendor/aosp" remote="pisces" revision="twelve-plus" />
+  <remove-project name="vendor_custom-preference" />
+  <project name="vendor_custom-preference" path="vendor/custom-preference" remote="pisces" revision="twelve" />
 <!-- Custom Pixel -->
 
 <!-- Game Space -->
