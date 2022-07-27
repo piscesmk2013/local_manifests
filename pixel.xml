@@ -50,6 +50,8 @@
   <project name="packages_apps_CarrierConfig" path="packages/apps/CarrierConfig" remote="pisces" revision="twelve" />
   <remove-project name="frameworks_opt_telephony" />
   <project name="frameworks_opt_telephony" path="frameworks/opt/telephony" remote="pisces" revision="twelve" />
+  <remove-project name="hardware_interfaces" />
+  <project name="hardware_interfaces" path="hardware/interfaces" remote="pisces" revision="twelve" />
   <remove-project name="vendor_aosp" />
   <project name="vendor_aosp" path="vendor/aosp" remote="pisces" revision="twelve-plus" />
   <remove-project name="vendor_custom-preference" />
