@@ -34,6 +34,8 @@
 <!-- Custom Pixel -->
   <remove-project name="system_core" />
   <project name="system_core" path="system/core" remote="pisces" revision="twelve" />
+  <remove-project name="system_netd" />
+  <project name="system_netd" path="system/netd" remote="pisces" revision="twelve" />
   <remove-project name="build_soong" />
   <project name="build_soong" path="build/soong" remote="pisces" revision="twelve" >
     <linkfile src="root.bp" dest="Android.bp" />
