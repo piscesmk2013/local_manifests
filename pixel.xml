@@ -32,6 +32,8 @@
   <project name="packages_services_Telecomm" path="packages/services/Telecomm" remote="pisces" revision="twelve-plus" />
 
 <!-- Custom Pixel -->
+  <remove-project name="art" />
+  <project name="art" path="art" remote="pisces" revision="twelve" />
   <remove-project name="bionic" />
   <project name="bionic" path="bionic" remote="pisces" revision="twelve" />
   <remove-project name="system_core" />
