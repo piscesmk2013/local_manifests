@@ -75,7 +75,7 @@
 <!-- Custom Pixel -->
 
 <!-- Game Space -->
-  <project name="packages_apps_GameSpace" path="packages/apps/GameSpace" remote="pisces" revision="main" />
+  <project name="packages_apps_GameSpace" path="packages/apps/GameSpace" remote="pisces" revision="thirteen" />
 <!-- Game Space -->
 
 <!-- KProfiles -->
