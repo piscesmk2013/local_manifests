@@ -70,6 +70,8 @@
   <project name="hardware_interfaces" path="hardware/interfaces" remote="pisces" revision="thirteen" />
   <remove-project name="vendor_aosp" />
   <project name="vendor_aosp" path="vendor/aosp" remote="pisces" revision="thirteen" />
+  <remove-project name="vendor_pixel-framework" />
+  <project name="vendor_pixel-framework" path="vendor/pixel-framework" remote="pisces" revision="thirteen" />
 <!-- Custom Pixel -->
 
 <!-- Game Space -->
