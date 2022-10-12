@@ -76,6 +76,8 @@
   <project name="vendor_pixel-framework" path="vendor/pixel-framework" remote="pisces" revision="thirteen" />
   <remove-project name="vendor_custom-preference" />
   <project name="vendor_custom-preference" path="vendor/custom-preference" remote="pisces" revision="thirteen" />
+  <remove-project name="vendor_qcom_opensource_data-ipa-cfg-mgr-legacy-um" />
+  <project name="vendor_qcom_opensource_data-ipa-cfg-mgr-legacy-um" path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um" remote="pisces" revision="thirteen" />
 <!-- Custom Pixel -->
 
 <!-- Game Space -->
