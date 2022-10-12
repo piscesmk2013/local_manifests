@@ -19,6 +19,9 @@
   <project name="vendor_qcom_opensource_commonsys-intf_display" path="vendor/qcom/opensource/commonsys-intf/display" remote="pisces" revision="thirteen" />
 <!-- Caf Hardware -->
 
+  <remove-project name="platform/external/jemalloc_new" />
+  <project name="external_jemalloc_new" path="external/jemalloc_new" remote="yaap" revision="thirteen" />
+
 <!-- Custom Pixel -->
   <remove-project name="art" />
   <project name="art" path="art" remote="pisces" revision="thirteen" />
