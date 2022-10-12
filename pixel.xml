@@ -24,9 +24,11 @@
 <!--
   <remove-project name="platform/system/memory/lmkd" />
   <project name="system_memory_lmkd" path="system/memory/lmkd" remote="yaap" revision="twelve" />
-  <remove-project name="platform/external/jemalloc_new" />
-  <project name="external_jemalloc_new" path="external/jemalloc_new" remote="yaap" revision="twelve" />
   -->
+  
+<!-- Yaap Repositories -->
+  <remove-project name="platform/external/jemalloc_new" />
+  <project name="external_jemalloc_new" path="external/jemalloc_new" remote="yaap" revision="thirteen" />
 
 <!-- Custom Pixel -->
   <remove-project name="art" />
