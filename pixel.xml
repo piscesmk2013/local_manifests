@@ -116,8 +116,8 @@
   <project name="system_extras" path="system/extras" remote="pisces" revision="thirteen" />
 <!-- EROFS -->
 
-<!-- Clang -->
+<!-- Clang
   <project clone-depth="1" name="yaosp/prebuilts_clang_host_linux-x86_clang-r450784b" path="prebuilts/clang/host/linux-x86/clang-r450784b" remote="gitlab" revision="master" />
-<!-- Clang -->
+Clang -->
 
 </manifest>
