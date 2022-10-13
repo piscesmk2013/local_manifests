@@ -94,6 +94,10 @@
   <project name="external_colorkt" path="external/colorkt" remote="pisces" revision="twelve" />
   <project name="external_themelib" path="external/themelib" remote="pisces" revision="twelve" />
   Theme Core -->
+  
+<!-- Theme Icons -->
+  <project name="packages_overlays_ThemeIcons" path="packages/overlays/ThemeIcons" remote="pisces" revision="thirteen" />
+<!-- Theme Icons -->
 
 <!-- EROFS -->
   <remove-project name="build" />
