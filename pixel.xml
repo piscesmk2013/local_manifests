@@ -27,8 +27,6 @@
   -->
   
 <!-- Yaap Repositories -->
-  <remove-project name="platform/external/arm-optimized-routines" />
-  <project name="external_arm-optimized-routines" path="external/arm-optimized-routines" remote="yaap" revision="thirteen" />
   <remove-project name="platform/external/jemalloc_new" />
   <project name="external_jemalloc_new" path="external/jemalloc_new" remote="yaap" revision="thirteen" />
 
