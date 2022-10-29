@@ -32,6 +32,10 @@
   <remove-project name="platform/external/jemalloc_new" />
   <project name="external_jemalloc_new" path="external/jemalloc_new" remote="yaap" revision="thirteen" />
 
+<!-- StatsD -->
+  <remove-project name="platform/packages/modules/StatsD" />
+  <project path="packages/modules/StatsD" name="packages_modules_StatsD" remote="pisces" revision="thirteen" />
+
 <!-- Custom Pixel -->
   <remove-project name="art" />
   <project name="art" path="art" remote="pisces" revision="thirteen" />
