@@ -60,10 +60,10 @@
   <project name="frameworks_native" path="frameworks/native" remote="pisces" revision="thirteen" />
   <remove-project name="packages_apps_Settings" />
   <project name="packages_apps_Settings" path="packages/apps/Settings" remote="pisces" revision="thirteen" />
-  <!--
+
   <remove-project name="packages_apps_Updates" />
-  <project name="packages_apps_Updates" path="packages/apps/Updates" remote="pisces" revision="twelve" />
-  -->
+  <project name="packages_apps_Updates" path="packages/apps/Updates" remote="pisces" revision="thirteen" />
+
   <remove-project name="packages_modules_Connectivity" />
   <project name="packages_modules_Connectivity" path="packages/modules/Connectivity" remote="pisces" revision="thirteen" />
   <remove-project name="packages_apps_CarrierConfig" />
