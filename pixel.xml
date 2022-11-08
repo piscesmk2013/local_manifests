@@ -22,8 +22,6 @@
 <!-- Caf Hardware -->
 
 <!--
-  <remove-project name="platform/system/memory/lmkd" />
-  <project name="system_memory_lmkd" path="system/memory/lmkd" remote="yaap" revision="twelve" />
   <remove-project name="platform/external/jemalloc_new" />
   <project name="external_jemalloc_new" path="external/jemalloc_new" remote="yaap" revision="twelve" />
   -->
@@ -50,6 +48,8 @@
   <project name="system_vold" path="system/vold" remote="pisces" revision="thirteen" />
   <remove-project name="bootable_recovery" />
   <project name="bootable_recovery" path="bootable/recovery" remote="pisces" revision="thirteen" />
+  <remove-project name="system_memory_lmkd" />
+  <project name="system_memory_lmkd" path="system/memory/lmkd" remote="pisces" revision="thirteen" />
   <remove-project name="device_custom_sepolicy" />
   <project name="device_custom_sepolicy" path="device/custom/sepolicy" remote="pisces" revision="thirteen" />
   <remove-project name="frameworks_base" />
