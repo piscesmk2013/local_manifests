@@ -37,15 +37,11 @@
   <project name="bionic" path="bionic" remote="pisces" revision="thirteen" />
   <remove-project name="system_core" />
   <project name="system_core" path="system/core" remote="pisces" revision="thirteen" />
-  <remove-project name="system_netd" />
-  <project name="system_netd" path="system/netd" remote="pisces" revision="thirteen" />
   <remove-project name="build_soong" />
   <project name="build_soong" path="build/soong" remote="pisces" revision="thirteen" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <remove-project name="system_vold" />
-  <project name="system_vold" path="system/vold" remote="pisces" revision="thirteen" />
   <remove-project name="bootable_recovery" />
   <project name="bootable_recovery" path="bootable/recovery" remote="pisces" revision="thirteen" />
   <remove-project name="system_memory_lmkd" />
@@ -72,8 +68,6 @@
   <project name="frameworks_opt_telephony" path="frameworks/opt/telephony" remote="pisces" revision="thirteen" />
   <remove-project name="packages_services_Telecomm" />
   <project name="packages_services_Telecomm" path="packages/services/Telecomm" remote="pisces" revision="thirteen" />
-  <remove-project name="hardware_interfaces" />
-  <project name="hardware_interfaces" path="hardware/interfaces" remote="pisces" revision="thirteen" />
   <remove-project name="vendor_aosp" />
   <project name="vendor_aosp" path="vendor/aosp" remote="pisces" revision="thirteen" />
   <remove-project name="vendor_pixel-framework" />
