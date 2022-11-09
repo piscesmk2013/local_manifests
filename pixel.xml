@@ -21,57 +21,66 @@
   <project name="vendor_qcom_opensource_commonsys-intf_display" path="vendor/qcom/opensource/commonsys-intf/display" remote="pisces" revision="thirteen" />
 <!-- Caf Hardware -->
 
-<!--
-  <remove-project name="platform/external/jemalloc_new" />
-  <project name="external_jemalloc_new" path="external/jemalloc_new" remote="yaap" revision="twelve" />
-  -->
-
-<!-- StatsD -->
-  <remove-project name="platform/packages/modules/StatsD" />
-  <project path="packages/modules/StatsD" name="packages_modules_StatsD" remote="pisces" revision="thirteen" />
-
 <!-- Custom Pixel -->
   <remove-project name="art" />
   <project name="art" path="art" remote="pisces" revision="thirteen" />
-  <remove-project name="bionic" />
-  <project name="bionic" path="bionic" remote="pisces" revision="thirteen" />
-  <remove-project name="system_core" />
-  <project name="system_core" path="system/core" remote="pisces" revision="thirteen" />
+
+  <remove-project name="build" />
+  <project name="build_make" path="build/make" remote="pisces" revision="thirteen" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
   <remove-project name="build_soong" />
   <project name="build_soong" path="build/soong" remote="pisces" revision="thirteen" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
+  <remove-project name="bionic" />
+  <project name="bionic" path="bionic" remote="pisces" revision="thirteen" />
   <remove-project name="bootable_recovery" />
   <project name="bootable_recovery" path="bootable/recovery" remote="pisces" revision="thirteen" />
-  <remove-project name="system_memory_lmkd" />
-  <project name="system_memory_lmkd" path="system/memory/lmkd" remote="pisces" revision="thirteen" />
+
   <remove-project name="device_custom_sepolicy" />
   <project name="device_custom_sepolicy" path="device/custom/sepolicy" remote="pisces" revision="thirteen" />
-  <remove-project name="frameworks_base" />
-  <project name="frameworks_base" path="frameworks/base" remote="pisces" revision="thirteen" />
+
   <remove-project name="frameworks_av" />
-  <project name="frameworks_av" path="frameworks/av" remote="pisces" revision="thirteen" />
+  <project name="frameworks_av" path="frameworks/av" remote="pisces" revision="thirteen-plus" />
+  <remove-project name="frameworks_base" />
+  <project name="frameworks_base" path="frameworks/base" remote="pisces" revision="thirteen-plus" />
   <remove-project name="frameworks_native" />
-  <project name="frameworks_native" path="frameworks/native" remote="pisces" revision="thirteen" />
-  <remove-project name="packages_apps_Settings" />
-  <project name="packages_apps_Settings" path="packages/apps/Settings" remote="pisces" revision="thirteen" />
-
-  <remove-project name="packages_apps_Updates" />
-  <project name="packages_apps_Updates" path="packages/apps/Updates" remote="pisces" revision="thirteen" />
-
-  <remove-project name="packages_modules_Connectivity" />
-  <project name="packages_modules_Connectivity" path="packages/modules/Connectivity" remote="pisces" revision="thirteen" />
-  <remove-project name="packages_apps_CarrierConfig" />
-  <project name="packages_apps_CarrierConfig" path="packages/apps/CarrierConfig" remote="pisces" revision="thirteen" />
+  <project name="frameworks_native" path="frameworks/native" remote="pisces" revision="thirteen-plus" />
   <remove-project name="frameworks_opt_telephony" />
   <project name="frameworks_opt_telephony" path="frameworks/opt/telephony" remote="pisces" revision="thirteen" />
+
+  <remove-project name="packages_apps_CarrierConfig" />
+  <project name="packages_apps_CarrierConfig" path="packages/apps/CarrierConfig" remote="pisces" revision="thirteen" />
+  <remove-project name="packages_apps_Settings" />
+  <project name="packages_apps_Settings" path="packages/apps/Settings" remote="pisces" revision="thirteen-plus" />
+  <remove-project name="packages_apps_Updates" />
+  <project name="packages_apps_Updates" path="packages/apps/Updates" remote="pisces" revision="thirteen" />
+  <remove-project name="packages_modules_Connectivity" />
+  <project name="packages_modules_Connectivity" path="packages/modules/Connectivity" remote="pisces" revision="thirteen-plus" />
   <remove-project name="packages_services_Telecomm" />
-  <project name="packages_services_Telecomm" path="packages/services/Telecomm" remote="pisces" revision="thirteen" />
+  <project name="packages_services_Telecomm" path="packages/services/Telecomm" remote="pisces" revision="thirteen-plus" />
+  <remove-project name="platform/packages/modules/StatsD" />
+  <project path="packages/modules/StatsD" name="packages_modules_StatsD" remote="pisces" revision="thirteen" />
+
+  <remove-project name="system_core" />
+  <project name="system_core" path="system/core" remote="pisces" revision="thirteen" />
+  <remove-project name="system_extras" />
+  <project name="system_extras" path="system/extras" remote="pisces" revision="thirteen" />
+  <remove-project name="system_memory_lmkd" />
+  <project name="system_memory_lmkd" path="system/memory/lmkd" remote="pisces" revision="thirteen" />
+
   <remove-project name="vendor_aosp" />
-  <project name="vendor_aosp" path="vendor/aosp" remote="pisces" revision="thirteen" />
+  <project name="vendor_aosp" path="vendor/aosp" remote="pisces" revision="thirteen-plus" />
   <remove-project name="vendor_pixel-framework" />
-  <project name="vendor_pixel-framework" path="vendor/pixel-framework" remote="pisces" revision="thirteen" />
+  <project name="vendor_pixel-framework" path="vendor/pixel-framework" remote="pisces" revision="thirteen-plus" />
   <remove-project name="vendor_custom-preference" />
   <project name="vendor_custom-preference" path="vendor/custom-preference" remote="pisces" revision="thirteen" />
   <remove-project name="vendor_qcom_opensource_data-ipa-cfg-mgr-legacy-um" />
@@ -85,35 +94,5 @@
 <!-- KProfiles -->
   <project path="packages/apps/KProfiles" name="CannedShroud/android_packages_apps_KProfiles" remote="github" revision="main" />
 <!-- KProfiles -->
-
-<!-- Theme Core
-  <project name="external_colorkt" path="external/colorkt" remote="pisces" revision="twelve" />
-  <project name="external_themelib" path="external/themelib" remote="pisces" revision="twelve" />
-  Theme Core -->
-
-<!-- EROFS -->
-  <remove-project name="build" />
-  <project name="build_make" path="build/make" remote="pisces" revision="thirteen" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-    <linkfile src="core" dest="build/core" />
-    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-    <linkfile src="target" dest="build/target" />
-    <linkfile src="tools" dest="build/tools" />
-  </project>
-
-<!--
-  <remove-project name="platform/external/erofs-utils" />
-  <project name="external_erofs-utils" path="external/erofs-utils" remote="yaap" revision="twelve" />
-  -->
-
-  <remove-project name="system_extras" />
-  <project name="system_extras" path="system/extras" remote="pisces" revision="thirteen" />
-<!-- EROFS -->
-
-<!-- Clang
-  <project clone-depth="1" name="yaosp/prebuilts_clang_host_linux-x86_clang-r450784b" path="prebuilts/clang/host/linux-x86/clang-r450784b" remote="gitlab" revision="master" />
-Clang -->
 
 </manifest>
