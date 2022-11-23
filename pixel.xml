@@ -93,4 +93,7 @@
   <project path="packages/apps/KProfiles" name="CannedShroud/android_packages_apps_KProfiles" remote="github" revision="main" />
 <!-- KProfiles -->
 
+<!-- Clang  -->
+  <project clone-depth="1" name="yaosp/prebuilts_clang_host_linux-x86_clang-r475365" path="prebuilts/clang/host/linux-x86/clang-r475365" remote="gitlab" revision="master" />
+
 </manifest>
