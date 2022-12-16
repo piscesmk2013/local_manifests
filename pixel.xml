@@ -107,6 +107,6 @@
   <project name="external_arm-optimized-routines" path="external/arm-optimized-routines" remote="yaap" revision="thirteen" />
 
 <!-- Clang  -->
-  <project clone-depth="1" name="yaosp/prebuilts_clang_host_linux-x86_clang-r475365" path="prebuilts/clang/host/linux-x86/clang-r475365" remote="gitlab" revision="master" />
+  <project clone-depth="1" name="yaosp/prebuilts_clang_host_linux-x86_clang-r475365b" path="prebuilts/clang/host/linux-x86/clang-r475365b" remote="gitlab" revision="master" />
 
 </manifest>
