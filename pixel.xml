@@ -50,6 +50,12 @@
 
   <remove-project name="external_jemalloc_new" />
   <project name="external_jemalloc_new" path="external/jemalloc_new" remote="pisces" revision="thirteen" />
+  <remove-project name="platform/external/lz4" />
+  <project name="external_lz4" path="external/lz4" remote="pisces" revision="thirteen" />
+  <remove-project name="platform/external/erofs-utils" />
+  <project name="external_erofs-utils" path="external/erofs-utils" remote="pisces" revision="thirteen" />
+  <remove-project name="platform/external/f2fs-tools" />
+  <project name="external_f2fs-tools" path="external/f2fs-tools" remote="pisces" revision="thirteen" />
 
   <remove-project name="frameworks_av" />
   <project name="frameworks_av" path="frameworks/av" remote="pisces" revision="thirteen-plus" />
