@@ -68,6 +68,10 @@
   <project name="external_sqlite" path="external/sqlite" remote="yaap" revision="thirteen" />
   <remove-project name="platform/external/zlib" />
   <project name="external_zlib-ng" path="external/zlib-ng" remote="yaap" revision="thirteen" />
+  <remove-project name="platform/external/libfuse" />
+  <project path="external/libfuse" name="external_libfuse" remote="yaap"  revision="thirteen" />
+  <remove-project name="platform/external/protobuf" />
+  <project path="external/protobuf" name="external_protobuf" remote="yaap"  revision="thirteen" />
 
   <remove-project name="frameworks_av" />
   <project name="frameworks_av" path="frameworks/av" remote="pisces" revision="thirteen-plus" />
@@ -138,7 +142,8 @@
   <project name="external_arm-optimized-routines" path="external/arm-optimized-routines" remote="yaap" revision="thirteen" />
 
 <!-- Clang  -->
-  <project clone-depth="1" name="yaosp/prebuilts_clang_host_linux-x86_clang-r475365b" path="prebuilts/clang/host/linux-x86/clang-r475365b" remote="gitlab" revision="master" />
+  <remove-project name="platform/prebuilts/clang/host/linux-x86" />
+  <project clone-depth="1" name="yaosp/prebuilts_clang_host_linux-x86" path="prebuilts/clang/host/linux-x86" remote="gitlab" revision="master" />
   <remove-project name="platform/prebuilts/rust" />
   <project path="prebuilts/rust" name="yaosp/prebuilts_rust" remote="gitlab" revision="thirteen" />
 
