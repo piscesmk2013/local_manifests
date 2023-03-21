@@ -145,6 +145,9 @@
   <remove-project name="platform/external/arm-optimized-routines" />
   <project name="external_arm-optimized-routines" path="external/arm-optimized-routines" remote="yaap" revision="thirteen" clone-depth="1" />
 
+  <remove-project name="platform/prebuilts/r8" />
+  <project path="prebuilts/r8" name="prebuilts_r8" remote="yaap" revision="thirteen" clone-depth="1" />
+
 <!-- Clang  -->
   <remove-project name="platform/prebuilts/clang/host/linux-x86" />
   <project name="yaosp/prebuilts_clang_host_linux-x86" path="prebuilts/clang/host/linux-x86" remote="gitlab" revision="master" clone-depth="1" />
