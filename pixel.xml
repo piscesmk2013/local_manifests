@@ -49,29 +49,6 @@
   <remove-project name="device_custom_sepolicy" />
   <project name="device_custom_sepolicy" path="device/custom/sepolicy" remote="pisces" revision="thirteen" />
 
-  <remove-project name="platform/external/aac" />
-  <project name="external_aac" path="external/aac" remote="yaap" revision="thirteen" clone-depth="1" />
-  <remove-project name="platform/external/lz4" />
-  <project name="external_lz4" path="external/lz4" remote="yaap" revision="thirteen" clone-depth="1" />
-  <remove-project name="platform/external/erofs-utils" />
-  <project name="external_erofs-utils" path="external/erofs-utils" remote="yaap" revision="thirteen" clone-depth="1" />
-  <remove-project name="platform/external/f2fs-tools" />
-  <project name="external_f2fs-tools" path="external/f2fs-tools" remote="yaap" revision="thirteen" clone-depth="1" />
-  <remove-project name="platform/external/libpng" />
-  <project name="external_libpng" path="external/libpng" remote="yaap" revision="thirteen" />
-  <remove-project name="platform/external/libjpeg-turbo" clone-depth="1" />
-  <project name="external_libjpeg-turbo" path="external/libjpeg-turbo" remote="yaap" revision="thirteen" clone-depth="1" />
-  <remove-project name="platform/external/rust/cxx" />
-  <project name="external_rust_cxx" path="external/rust/cxx" remote="yaap" revision="thirteen" clone-depth="1" />
-  <remove-project name="platform/external/rust/crates/ring" />
-  <project name="external_rust_crates_ring" path="external/rust/crates/ring" remote="yaap" revision="thirteen" clone-depth="1" />
-  <remove-project name="platform/external/sqlite" />
-  <project name="external_sqlite" path="external/sqlite" remote="yaap" revision="thirteen" />
-  <remove-project name="platform/external/zlib" clone-depth="1" />
-  <project name="external_zlib-ng" path="external/zlib-ng" remote="yaap" revision="thirteen" />
-  <remove-project name="platform/external/protobuf" />
-  <project path="external/protobuf" name="external_protobuf" remote="yaap"  revision="thirteen" clone-depth="1" />
-
   <remove-project name="frameworks_av" />
   <project name="frameworks_av" path="frameworks/av" remote="pisces" revision="thirteen-plus" />
   <remove-project name="frameworks_base" />
@@ -100,12 +77,8 @@
   <project name="system_core" path="system/core" remote="pisces" revision="thirteen" />
   <remove-project name="system_extras" />
   <project name="system_extras" path="system/extras" remote="pisces" revision="thirteen" />
-  <remove-project name="platform/system/linkerconfig" />
-  <project name="system_linkerconfig" path="system/linkerconfig" remote="yaap" revision="thirteen" clone-depth="1" />
   <remove-project name="system_logging" />
   <project name="system_logging" path="system/logging" remote="pisces" revision="thirteen" />
-  <remove-project name="system_memory_lmkd" />
-  <project name="system_memory_lmkd" path="system/memory/lmkd" remote="yaap" revision="thirteen" clone-depth="1" />
   <remove-project name="system_netd" />
   <project name="system_netd" path="system/netd" remote="pisces" revision="thirteen" />
   <remove-project name="system_update_engine" />
@@ -128,11 +101,6 @@
   <project name="hardware_interfaces" path="hardware/interfaces" remote="pisces" revision="thirteen" />
 <!-- Custom Pixel -->
 
-<!-- Qcom -->
-  <project name="device_qcom_common" path="device/qcom/common" remote="yaap" revision="thirteen" clone-depth="1" />
-  <project name="yaosp/vendor_qcom_common" path="vendor/qcom/common" remote="gitlab" revision="thirteen" clone-depth="1" />
-<!-- Qcom -->
-
 <!-- Game Space -->
   <project name="packages_apps_GameSpace" path="packages/apps/GameSpace" remote="pisces" revision="thirteen" />
 <!-- Game Space -->
@@ -140,6 +108,40 @@
 <!-- KProfiles -->
   <project path="packages/apps/KProfiles" name="KProfiles/android_packages_apps_KProfiles" remote="github" revision="main" />
 <!-- KProfiles -->
+
+<!-- From YAAP -->
+  <remove-project name="platform/external/aac" />
+  <project name="external_aac" path="external/aac" remote="yaap" revision="thirteen" clone-depth="1" />
+  <remove-project name="platform/external/lz4" />
+  <project name="external_lz4" path="external/lz4" remote="yaap" revision="thirteen" clone-depth="1" />
+  <remove-project name="platform/external/erofs-utils" />
+  <project name="external_erofs-utils" path="external/erofs-utils" remote="yaap" revision="thirteen" clone-depth="1" />
+  <remove-project name="platform/external/f2fs-tools" />
+  <project name="external_f2fs-tools" path="external/f2fs-tools" remote="yaap" revision="thirteen" clone-depth="1" />
+  <remove-project name="platform/external/libpng" />
+  <project name="external_libpng" path="external/libpng" remote="yaap" revision="thirteen" />
+  <remove-project name="platform/external/libjpeg-turbo" clone-depth="1" />
+  <project name="external_libjpeg-turbo" path="external/libjpeg-turbo" remote="yaap" revision="thirteen" clone-depth="1" />
+  <remove-project name="platform/external/rust/cxx" />
+  <project name="external_rust_cxx" path="external/rust/cxx" remote="yaap" revision="thirteen" clone-depth="1" />
+  <remove-project name="platform/external/rust/crates/ring" />
+  <project name="external_rust_crates_ring" path="external/rust/crates/ring" remote="yaap" revision="thirteen" clone-depth="1" />
+  <remove-project name="platform/external/sqlite" />
+  <project name="external_sqlite" path="external/sqlite" remote="yaap" revision="thirteen" />
+  <remove-project name="platform/external/zlib" clone-depth="1" />
+  <project name="external_zlib-ng" path="external/zlib-ng" remote="yaap" revision="thirteen" />
+  <remove-project name="platform/external/protobuf" />
+  <project path="external/protobuf" name="external_protobuf" remote="yaap"  revision="thirteen" clone-depth="1" />
+  <remove-project name="platform/external/freetype" />
+  <project name="external_freetype" path="external/freetype" remote="yaap" revision="thirteen" clone-depth="1" />
+  <remove-project name="platform/external/harfbuzz_ng" />
+  <project name="external_harfbuzz_ng" path="external/harfbuzz_ng" remote="yaap" revision="thirteen" clone-depth="1" />
+  <remove-project name="platform/external/skia" />
+  <project name="external_skia" path="external/skia" remote="yaap" revision="thirteen" clone-depth="1" />
+  <remove-project name="platform/system/linkerconfig" />
+  <project name="system_linkerconfig" path="system/linkerconfig" remote="yaap" revision="thirteen" clone-depth="1" />
+  <remove-project name="system_memory_lmkd" />
+  <project name="system_memory_lmkd" path="system/memory/lmkd" remote="yaap" revision="thirteen" clone-depth="1" />
 
 <!-- Arm-optimized-routines -->
   <remove-project name="platform/external/arm-optimized-routines" />
@@ -153,5 +155,10 @@
   <project name="yaosp/prebuilts_clang_host_linux-x86" path="prebuilts/clang/host/linux-x86" remote="gitlab" revision="master" clone-depth="1" />
   <remove-project name="platform/prebuilts/rust" />
   <project path="prebuilts/rust" name="yaosp/prebuilts_rust" remote="gitlab" revision="thirteen" clone-depth="1" />
+
+<!-- Qcom -->
+  <project name="device_qcom_common" path="device/qcom/common" remote="yaap" revision="thirteen" clone-depth="1" />
+  <project name="yaosp/vendor_qcom_common" path="vendor/qcom/common" remote="gitlab" revision="thirteen" clone-depth="1" />
+<!-- Qcom -->
 
 </manifest>
