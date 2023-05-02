@@ -114,6 +114,8 @@
   <project name="external_aac" path="external/aac" remote="yaap" revision="thirteen" clone-depth="1" />
   <remove-project name="platform/external/lz4" />
   <project name="external_lz4" path="external/lz4" remote="yaap" revision="thirteen" clone-depth="1" />
+  <remove-project name="platform/external/elfutils" />
+  <project name="external_elfutils" path="external/elfutils" remote="yaap" revision="thirteen" clone-depth="1" />
   <remove-project name="platform/external/erofs-utils" />
   <project name="external_erofs-utils" path="external/erofs-utils" remote="yaap" revision="thirteen" clone-depth="1" />
   <remove-project name="platform/external/f2fs-tools" />
