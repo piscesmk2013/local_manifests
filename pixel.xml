@@ -140,6 +140,8 @@
   <project name="external_harfbuzz_ng" path="external/harfbuzz_ng" remote="yaap" revision="thirteen" clone-depth="1" />
   <remove-project name="platform/external/skia" />
   <project name="external_skia" path="external/skia" remote="yaap" revision="thirteen" clone-depth="1" />
+  <remove-project name="platform/external/vixl" />
+  <project name="external_vixl" path="external/vixl" remote="yaap" revision="thirteen" clone-depth="1" />
   <remove-project name="platform/system/linkerconfig" />
   <project name="system_linkerconfig" path="system/linkerconfig" remote="yaap" revision="thirteen" clone-depth="1" />
   <remove-project name="system_memory_lmkd" />
