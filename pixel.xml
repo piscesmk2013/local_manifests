@@ -50,7 +50,7 @@
   <project name="device_custom_sepolicy" path="device/custom/sepolicy" remote="pisces" revision="thirteen" />
 
   <remove-project name="frameworks_av" />
-  <project name="frameworks_av" path="frameworks/av" remote="pisces" revision="thirteen-plus" />
+  <project name="frameworks_av" path="frameworks/av" remote="pisces" revision="thirteen" />
   <remove-project name="frameworks_base" />
   <project name="frameworks_base" path="frameworks/base" remote="pisces" revision="thirteen-plus" />
   <remove-project name="frameworks_native" />
