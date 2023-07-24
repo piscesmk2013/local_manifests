@@ -106,7 +106,7 @@
 <!-- Game Space -->
 
 <!-- KProfiles -->
-  <project path="packages/apps/KProfiles" name="KProfiles/android_packages_apps_KProfiles" remote="github" revision="main" />
+  <project path="packages/apps/KProfiles" name="packages_apps_KProfiles" remote="yaap" revision="thirteen" />
 <!-- KProfiles -->
 
 <!-- From YAAP -->
