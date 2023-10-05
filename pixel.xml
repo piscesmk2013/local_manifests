@@ -110,6 +110,8 @@
 <!-- From YAAP -->
   <remove-project name="platform/external/aac" />
   <project name="external_aac" path="external/aac" remote="yaap" revision="thirteen" clone-depth="1" />
+  <remove-project name="platform/external/libxml2" />
+  <project name="external_libxml2" path="external/libxml2" remote="yaap" revision="thirteen" clone-depth="1" />
   <remove-project name="platform/external/lz4" />
   <project name="external_lz4" path="external/lz4" remote="yaap" revision="thirteen" clone-depth="1" />
   <remove-project name="platform/external/elfutils" />
@@ -144,6 +146,8 @@
   <project name="system_linkerconfig" path="system/linkerconfig" remote="yaap" revision="thirteen" clone-depth="1" />
   <remove-project name="system_memory_lmkd" />
   <project name="system_memory_lmkd" path="system/memory/lmkd" remote="yaap" revision="thirteen" clone-depth="1" />
+  <remove-project name="platform/tools/apksig" />
+  <project name="tools_apksig" path="tools/apksig" remote="yaap" revision="thirteen" clone-depth="1" />
 
 <!-- Arm-optimized-routines -->
   <remove-project name="platform/external/arm-optimized-routines" />
