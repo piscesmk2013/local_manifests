@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="GrapheneOS"
+          fetch="ssh://git@github.com/GrapheneOS" />
+
+  <!-- External -->
+  <project path="external/seedvault" name="platform_external_seedvault" remote="GrapheneOS" revision="14" clone-depth="1" />
+
+</manifest>

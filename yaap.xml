@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="yaap"
+          fetch="ssh://git@github.com/yaap" />
+
+  <remote name="gitlab"
+          fetch="https://gitlab.com" />
+
+  <!-- External -->
+  <remove-project name="platform/external/arm-optimized-routines" />
+  <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <remove-project name="external_boringssl" />
+  <project path="external/boringssl" name="external_boringssl" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <remove-project name="platform/external/exfatprogs" />
+  <project path="external/exfatprogs" name="external_exfatprogs" remote="yaap" revision="fourteen" clone-depth="1" />
+
+<!--
+  <remove-project name="platform/external/elfutils" />
+  <project path="external/elfutils" name="external_elfutils" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <remove-project name="platform/external/erofs-utils" />
+  <project path="external/erofs-utils" name="external_erofs-utils" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <remove-project name="platform/external/f2fs-tools" />
+  <project path="external/f2fs-tools" name="external_f2fs-tools" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <remove-project name="platform/external/freetype" />
+  <project path="external/freetype" name="external_freetype" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <remove-project name="platform/external/harfbuzz_ng" />
+  <project path="external/harfbuzz_ng" name="external_harfbuzz_ng" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <remove-project name="platform/external/libpng" />
+  <project path="external/libpng" name="external_libpng" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <remove-project name="platform/external/libxml2" />
+  <project path="external/libxml2" name="external_libxml2" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <remove-project name="platform/external/lz4" />
+  <project path="external/lz4" name="external_lz4" remote="yaap" revision="fourteen" clone-depth="1" />
+ 
+  <remove-project name="platform/external/protobuf" />
+  <project path="external/protobuf" name="external_protobuf" remote="yaap" revision="fourteen" clone-depth="1" />
+ 
+  <remove-project name="platform/external/rust/cxx" />
+  <project path="external/rust/cxx" name="external_rust_cxx" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <remove-project name="platform/external/skia" />
+  <project path="external/skia" name="external_skia" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <remove-project name="external_json-c" />
+  <project path="external/json-c" name="external_json-c" remote="yaap" revision="fourteen" clone-depth="1" />
+-->
+
+  <remove-project name="platform/external/libjpeg-turbo" />
+  <project path="external/libjpeg-turbo" name="external_libjpeg-turbo" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <remove-project name="platform/external/jemalloc_new" />
+  <project path="external/jemalloc_new" name="external_jemalloc_new" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <remove-project name="external_perfetto" />
+  <project path="external/perfetto" name="external_perfetto" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <remove-project name="platform/external/rust/crates/ring" />
+  <project path="external/rust/crates/ring" name="external_rust_crates_ring" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <project path="external/svox" name="external_svox" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <remove-project name="platform/external/vixl" />
+  <project path="external/vixl" name="external_vixl" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <!-- Frameworks-->
+  <remove-project name="frameworks_opt_net_ims" />
+  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <!-- Hardware -->
+  <project path="hardware/qcom-caf/bt" name="hardware_qcom-caf_bt" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <remove-project name="hardware_qcom-caf_wlan" />
+  <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <!-- Packages -->
+  <project path="packages/apps/KProfiles" name="packages_apps_KProfiles" remote="yaap" revision="fourteen" clone-depth="1" />
+  <remove-project name="packages_apps_PhoneCommon" />
+  <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <remove-project name="platform/packages/providers/TelephonyProvider" />
+  <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" remote="yaap" revision="fourteen" clone-depth="1" />
+
+<!--
+  <remove-project name="platform/packages/services/Iwlan" />
+  <project path="packages/services/Iwlan" name="packages_services_Iwlan" remote="yaap" revision="fourteen" clone-depth="1" />
+-->
+
+  <!-- Prebuilts -->
+  <remove-project name="platform/prebuilts/clang/host/linux-x86" />
+  <project path="prebuilts/clang/host/linux-x86" name="yaosp/prebuilts_clang_host_linux-x86" remote="gitlab" revision="fourteen" clone-depth="1" />
+
+  <remove-project name="toolchain/pgo-profiles" />
+  <project path="toolchain/pgo-profiles" name="toolchain_pgo-profiles" remote="yaap" revision="fourteen" clone-depth="1" />
+
+<!--
+  <remove-project name="platform/tools/apksig" />
+  <project path="tools/apksig" name="tools_apksig" remote="yaap" revision="fourteen" clone-depth="1" />
+-->
+
+  <!-- Qcom -->
+  <project path="device/qcom/common" name="device_qcom_common" remote="yaap" revision="fourteen" clone-depth="1" />
+  <project path="vendor/qcom/common" name="yaosp/vendor_qcom_common" remote="gitlab" revision="fourteen" clone-depth="1" />
+
+  <!-- System -->
+<!--
+  <remove-project name="system_apex" />
+  <project path="system/apex" name="system_apex" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <remove-project name="system_libziparchive" />
+  <project name="system_libziparchive" path="system/libziparchive" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <remove-project name="platform/system/linkerconfig" />
+  <project path="system/linkerconfig" name="system_linkerconfig" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <remove-project name="system_logging" />
+  <project path="system/logging" name="system_logging" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <remove-project name="system_netd" />
+  <project path="system/netd" name="system_netd" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <remove-project name="system_vold" />
+  <project path="system/vold" name="system_vold" remote="yaap" revision="fourteen" clone-depth="1" />
+-->
+ 
+  <remove-project name="platform/system/libsysprop" />
+  <project path="system/libsysprop" name="system_libsysprop" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <!-- Vendor -->
+  <remove-project name="vendor_codeaurora_telephony" />
+  <project name="vendor_codeaurora_telephony" path="vendor/codeaurora/telephony" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <project path="vendor/qcom/opensource/audio" name="vendor_qcom_opensource_audio" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <remove-project name="vendor_qcom_opensource_audio-hal_st-hal" />
+  <project path="vendor/qcom/opensource/audio-hal/st-hal" name="vendor_qcom_opensource_audio-hal_st-hal" remote="yaap" revision="fourteen" clone-depth="1" />
+
+</manifest>

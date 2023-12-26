@@ -1,31 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="ssh://git@github.com/piscesmk2013" name="pisces" />
-  <remote fetch="ssh://git@github.com/yaap" name="yaap" />
-  <remote fetch="https://gitlab.com" name="gitlab" />
+  <remote name="pisces"
+          fetch="ssh://git@github.com/piscesmk2013" />
 
-<!-- Caf Hardware -->
-  <remove-project name="hardware_qcom-caf_sm8150_audio" />
-  <remove-project name="hardware_qcom-caf_sm8150_display" />
-  <remove-project name="hardware_qcom-caf_sm8150_media" />
-  <remove-project name="vendor_qcom_opensource_commonsys_display" />
-  <remove-project name="vendor_qcom_opensource_commonsys-intf_display" />
-  <project name="hardware_qcom-caf_sm8150_audio" path="hardware/qcom-caf/sm8150/audio" remote="pisces" revision="thirteen" />
-  <project name="hardware_qcom-caf_sm8150_display" path="hardware/qcom-caf/sm8150/display" remote="pisces" revision="thirteen" />
-  <project name="hardware_qcom-caf_sm8150_media" path="hardware/qcom-caf/sm8150/media" remote="pisces" revision="thirteen" />
-  <project name="vendor_qcom_opensource_commonsys_display" path="vendor/qcom/opensource/commonsys/display" remote="pisces" revision="thirteen" />
-  <project name="vendor_qcom_opensource_commonsys-intf_display" path="vendor/qcom/opensource/commonsys-intf/display" remote="pisces" revision="thirteen" />
-<!-- Caf Hardware -->
-
-  <remove-project name="platform/external/jemalloc_new" />
-  <project name="external_jemalloc_new" path="external/jemalloc_new" remote="yaap" revision="thirteen" />
-
-<!-- Custom Pixel -->
+  <!-- General -->
   <remove-project name="art" />
-  <project name="art" path="art" remote="pisces" revision="thirteen" />
+  <project name="art" path="art" remote="pisces" revision="fourteen" />
+  <remove-project name="bootable_recovery" />
+  <project name="bootable_recovery" path="bootable/recovery" remote="pisces" revision="fourteen" />
+  <remove-project name="bionic" />
+  <project name="bionic" path="bionic" remote="pisces" revision="fourteen" />
 
+  <!-- Build -->
   <remove-project name="build" />
-  <project name="build_make" path="build/make" remote="pisces" revision="thirteen" >
+  <project name="build_make" path="build/make" remote="pisces" revision="fourteen" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -35,136 +23,108 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
   <remove-project name="build_soong" />
-  <project name="build_soong" path="build/soong" remote="pisces" revision="thirteen" >
+  <project name="build_soong" path="build/soong" remote="pisces" revision="fourteen" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <remove-project name="bionic" />
-  <project name="bionic" path="bionic" remote="pisces" revision="thirteen" />
-  <remove-project name="bootable_recovery" />
-  <project name="bootable_recovery" path="bootable/recovery" remote="pisces" revision="thirteen" />
+  
+  <!-- Caf Hardware -->
+  <remove-project name="hardware_qcom-caf_sm8150_audio" />
+  <remove-project name="hardware_qcom-caf_sm8150_display" />
+  <remove-project name="hardware_qcom-caf_sm8150_media" />
+  <remove-project name="vendor_qcom_opensource_commonsys_display" />
+  <remove-project name="vendor_qcom_opensource_commonsys-intf_display" />
+  <project name="hardware_qcom-caf_sm8150_audio" path="hardware/qcom-caf/sm8150/audio" remote="pisces" revision="fourteen" />
+  <project name="hardware_qcom-caf_sm8150_display" path="hardware/qcom-caf/sm8150/display" remote="pisces" revision="fourteen" />
+  <project name="hardware_qcom-caf_sm8150_media" path="hardware/qcom-caf/sm8150/media" remote="pisces" revision="fourteen" />
+  <project name="vendor_qcom_opensource_commonsys_display" path="vendor/qcom/opensource/commonsys/display" remote="pisces" revision="fourteen" />
+  <project name="vendor_qcom_opensource_commonsys-intf_display" path="vendor/qcom/opensource/commonsys-intf/display" remote="pisces" revision="fourteen" />
 
+  <!-- Device -->
   <remove-project name="device_custom_sepolicy" />
-  <project name="device_custom_sepolicy" path="device/custom/sepolicy" remote="pisces" revision="thirteen" />
+  <project name="device_custom_sepolicy" path="device/custom/sepolicy" remote="pisces" revision="fourteen" />
 
-  <remove-project name="frameworks_av" />
-  <project name="frameworks_av" path="frameworks/av" remote="pisces" revision="thirteen" />
-  <remove-project name="frameworks_base" />
-  <project name="frameworks_base" path="frameworks/base" remote="pisces" revision="thirteen-plus" />
-  <remove-project name="frameworks_native" />
-  <project name="frameworks_native" path="frameworks/native" remote="pisces" revision="thirteen-plus" />
-  <remove-project name="frameworks_opt_telephony" />
-  <project name="frameworks_opt_telephony" path="frameworks/opt/telephony" remote="pisces" revision="thirteen" />
-
-  <remove-project name="packages_apps_CarrierConfig" />
-  <project name="packages_apps_CarrierConfig" path="packages/apps/CarrierConfig" remote="pisces" revision="thirteen" />
-  <remove-project name="packages_apps_Settings" />
-  <project name="packages_apps_Settings" path="packages/apps/Settings" remote="pisces" revision="thirteen-plus" />
-  <remove-project name="packages_apps_Updates" />
-  <project name="packages_apps_Updates" path="packages/apps/Updates" remote="pisces" revision="thirteen" />
-  <remove-project name="packages_services_Telecomm" />
-  <project name="packages_services_Telecomm" path="packages/services/Telecomm" remote="pisces" revision="thirteen-plus" />
-  <remove-project name="packages_modules_Bluetooth" />
-  <project name="packages_modules_Bluetooth" path="packages/modules/Bluetooth" remote="pisces" revision="thirteen" />
-  <remove-project name="packages_modules_Connectivity" />
-  <project name="packages_modules_Connectivity" path="packages/modules/Connectivity" remote="pisces" revision="thirteen-plus" />
-
-  <remove-project name="system_apex" />
-  <project name="system_apex" path="system/apex" remote="pisces" revision="thirteen" />
-  <remove-project name="system_core" />
-  <project name="system_core" path="system/core" remote="pisces" revision="thirteen" />
-  <remove-project name="system_extras" />
-  <project name="system_extras" path="system/extras" remote="pisces" revision="thirteen" />
-  <remove-project name="system_logging" />
-  <project name="system_logging" path="system/logging" remote="pisces" revision="thirteen" />
-  <remove-project name="system_netd" />
-  <project name="system_netd" path="system/netd" remote="pisces" revision="thirteen" />
-  <remove-project name="system_update_engine" />
-  <project name="system_update_engine" path="system/update_engine" remote="pisces" revision="thirteen" />
-  <remove-project name="system_sepolicy" />
-  <project name="system_sepolicy" path="system/sepolicy" remote="pisces" revision="thirteen" />
-  <remove-project name="system_libziparchive" />
-  <project name="system_libziparchive" path="system/libziparchive" remote="pisces" revision="thirteen" />
-
-  <remove-project name="vendor_aosp" />
-  <project name="vendor_aosp" path="vendor/aosp" remote="pisces" revision="thirteen-plus" />
-  <remove-project name="vendor_pixel-framework" />
-  <project name="vendor_pixel-framework" path="vendor/pixel-framework" remote="pisces" revision="thirteen-plus" />
-  <remove-project name="vendor_custom-preference" />
-  <project name="vendor_custom-preference" path="vendor/custom-preference" remote="pisces" revision="thirteen" />
-  <remove-project name="vendor_qcom_opensource_data-ipa-cfg-mgr-legacy-um" />
-  <project name="vendor_qcom_opensource_data-ipa-cfg-mgr-legacy-um" path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um" remote="pisces" revision="thirteen" />
-
-  <remove-project name="hardware_interfaces" />
-  <project name="hardware_interfaces" path="hardware/interfaces" remote="pisces" revision="thirteen" />
-<!-- Custom Pixel -->
-
-<!-- Game Space -->
-  <project name="packages_apps_GameSpace" path="packages/apps/GameSpace" remote="pisces" revision="thirteen" />
-<!-- Game Space -->
-
-<!-- KProfiles -->
-  <project path="packages/apps/KProfiles" name="packages_apps_KProfiles" remote="yaap" revision="thirteen" />
-<!-- KProfiles -->
-
-<!-- From YAAP -->
+  <!-- External -->
   <remove-project name="platform/external/aac" />
-  <project name="external_aac" path="external/aac" remote="yaap" revision="thirteen" clone-depth="1" />
-  <remove-project name="platform/external/libxml2" />
-  <project name="external_libxml2" path="external/libxml2" remote="yaap" revision="thirteen" clone-depth="1" />
-  <remove-project name="platform/external/lz4" />
-  <project name="external_lz4" path="external/lz4" remote="yaap" revision="thirteen" clone-depth="1" />
-  <remove-project name="platform/external/elfutils" />
-  <project name="external_elfutils" path="external/elfutils" remote="yaap" revision="thirteen" clone-depth="1" />
-  <remove-project name="platform/external/erofs-utils" />
-  <project name="external_erofs-utils" path="external/erofs-utils" remote="yaap" revision="thirteen" clone-depth="1" />
-  <remove-project name="platform/external/f2fs-tools" />
-  <project name="external_f2fs-tools" path="external/f2fs-tools" remote="yaap" revision="thirteen" clone-depth="1" />
-  <remove-project name="platform/external/libpng" />
-  <project name="external_libpng" path="external/libpng" remote="yaap" revision="thirteen" />
-  <remove-project name="platform/external/libjpeg-turbo" clone-depth="1" />
-  <project name="external_libjpeg-turbo" path="external/libjpeg-turbo" remote="yaap" revision="thirteen" clone-depth="1" />
-  <remove-project name="platform/external/rust/cxx" />
-  <project name="external_rust_cxx" path="external/rust/cxx" remote="yaap" revision="thirteen" clone-depth="1" />
-  <remove-project name="platform/external/rust/crates/ring" />
-  <project name="external_rust_crates_ring" path="external/rust/crates/ring" remote="yaap" revision="thirteen" clone-depth="1" />
-  <remove-project name="platform/external/sqlite" />
-  <project name="external_sqlite" path="external/sqlite" remote="yaap" revision="thirteen" />
-  <remove-project name="platform/external/zlib" clone-depth="1" />
-  <project name="external_zlib-ng" path="external/zlib-ng" remote="yaap" revision="thirteen" />
-  <remove-project name="platform/external/protobuf" />
-  <project path="external/protobuf" name="external_protobuf" remote="yaap"  revision="thirteen" clone-depth="1" />
-  <remove-project name="platform/external/freetype" />
-  <project name="external_freetype" path="external/freetype" remote="yaap" revision="thirteen" clone-depth="1" />
-  <remove-project name="platform/external/harfbuzz_ng" />
-  <project name="external_harfbuzz_ng" path="external/harfbuzz_ng" remote="yaap" revision="thirteen" clone-depth="1" />
+  <project path="external/aac" name="external_aac" remote="pisces" revision="fourteen" />
+  
   <remove-project name="platform/external/skia" />
-  <project name="external_skia" path="external/skia" remote="yaap" revision="thirteen" clone-depth="1" />
-  <remove-project name="platform/external/vixl" />
-  <project name="external_vixl" path="external/vixl" remote="yaap" revision="thirteen" clone-depth="1" />
-  <remove-project name="platform/system/linkerconfig" />
-  <project name="system_linkerconfig" path="system/linkerconfig" remote="yaap" revision="thirteen" clone-depth="1" />
+  <project path="external/skia" name="external_skia" remote="pisces" revision="fourteen" />
+
+  <remove-project name="platform/external/sqlite" />
+  <project path="external/sqlite" name="external_sqlite" remote="pisces" revision="fourteen" />
+
+  <remove-project name="external_tinycompress" />
+  <project name="external_tinycompress" path="external/tinycompress" remote="pisces" revision="fourteen" />
+
   <remove-project name="system_memory_lmkd" />
-  <project name="system_memory_lmkd" path="system/memory/lmkd" remote="yaap" revision="thirteen" clone-depth="1" />
-  <remove-project name="platform/tools/apksig" />
-  <project name="tools_apksig" path="tools/apksig" remote="yaap" revision="thirteen" clone-depth="1" />
+  <project path="system/memory/lmkd" name="system_memory_lmkd" remote="pisces" revision="fourteen" clone-depth="1" />
 
-<!-- Arm-optimized-routines -->
-  <remove-project name="platform/external/arm-optimized-routines" />
-  <project name="external_arm-optimized-routines" path="external/arm-optimized-routines" remote="yaap" revision="thirteen" clone-depth="1" />
+  <!-- Frameworks -->
+  <remove-project name="frameworks_av" />
+  <project name="frameworks_av" path="frameworks/av" remote="pisces" revision="fourteen" />
 
-  <remove-project name="platform/prebuilts/r8" />
-  <project path="prebuilts/r8" name="prebuilts_r8" remote="yaap" revision="thirteen" clone-depth="1" />
+  <remove-project name="frameworks_base" />
+  <project name="frameworks_base" path="frameworks/base" remote="pisces" revision="fourteen" />
 
-<!-- Clang  -->
-  <remove-project name="platform/prebuilts/clang/host/linux-x86" />
-  <project name="yaosp/prebuilts_clang_host_linux-x86" path="prebuilts/clang/host/linux-x86" remote="gitlab" revision="master" clone-depth="1" />
-  <remove-project name="platform/prebuilts/rust" />
-  <project path="prebuilts/rust" name="yaosp/prebuilts_rust" remote="gitlab" revision="thirteen" clone-depth="1" />
+  <remove-project name="frameworks_native" />
+  <project name="frameworks_native" path="frameworks/native" remote="pisces" revision="fourteen" />
 
-<!-- Qcom -->
-  <project name="device_qcom_common" path="device/qcom/common" remote="yaap" revision="thirteen" clone-depth="1" />
-  <project name="yaosp/vendor_qcom_common" path="vendor/qcom/common" remote="gitlab" revision="thirteen" clone-depth="1" />
-<!-- Qcom -->
+  <remove-project name="frameworks_opt_telephony" />
+  <project name="frameworks_opt_telephony" path="frameworks/opt/telephony" remote="pisces" revision="fourteen" />
+
+  <!-- Hardware -->
+  <remove-project name="hardware_interfaces" />
+  <project name="hardware_interfaces" path="hardware/interfaces" remote="pisces" revision="fourteen" />
+
+  <!-- Packages -->
+  <remove-project name="packages_apps_CarrierConfig" />
+  <project name="packages_apps_CarrierConfig" path="packages/apps/CarrierConfig" remote="pisces" revision="fourteen" />
+
+  <project name="packages_apps_GameSpace" path="packages/apps/GameSpace" remote="pisces" revision="fourteen" />
+
+  <remove-project name="packages_apps_Settings" />
+  <project name="packages_apps_Settings" path="packages/apps/Settings" remote="pisces" revision="fourteen" />
+
+  <remove-project name="packages_modules_Bluetooth" />
+  <project name="packages_modules_Bluetooth" path="packages/modules/Bluetooth" remote="pisces" revision="fourteen" />
+
+  <remove-project name="packages_services_Telecomm" />
+  <project name="packages_services_Telecomm" path="packages/services/Telecomm" remote="pisces" revision="fourteen" />
+
+  <remove-project name="packages_services_Telephony" />
+  <project name="packages_services_Telephony" path="packages/services/Telephony" remote="pisces" revision="fourteen" />
+
+  <project name="packages_overlays_ThemeIcons" path="packages/overlays/ThemeIcons" remote="pisces" revision="fourteen" />
+
+  <!--
+  <remove-project name="packages_apps_Updates" />
+  -->
+  <project name="packages_apps_Updates" path="packages/apps/Updates" remote="pisces" revision="fourteen" />
+
+  <!-- System -->
+  <remove-project name="system_core" />
+  <project name="system_core" path="system/core" remote="pisces" revision="fourteen" />
+
+  <remove-project name="system_update_engine" />
+  <project name="system_update_engine" path="system/update_engine" remote="pisces" revision="fourteen" />
+  <remove-project name="system_sepolicy" />
+  <project name="system_sepolicy" path="system/sepolicy" remote="pisces" revision="fourteen" />
+
+  <remove-project name="platform/system/linkerconfig" />
+  <project name="system_linkerconfig" path="system/linkerconfig" remote="pisces" revision="fourteen" />
+
+  <remove-project name="platform/system/server_configurable_flags" />
+  <project name="system_server_configurable_flags" path="system/server_configurable_flags" remote="pisces" revision="fourteen" />
+
+  <!-- Vendor -->
+  <remove-project name="vendor_aosp" />
+  <project path="vendor/aosp" name="vendor_aosp" remote="pisces" revision="fourteen" />
+
+  <remove-project name="vendor_custom-preference" />
+  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="pisces" revision="fourteen" />
+
+  <remove-project name="vendor_qcom_opensource_data-ipa-cfg-mgr-legacy-um" />
+  <project name="vendor_qcom_opensource_data-ipa-cfg-mgr-legacy-um" path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um" remote="pisces" revision="fourteen" />
 
 </manifest>

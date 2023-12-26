@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="parasite-gitlab"
+          fetch="https://gitlab.com/someone5678" />
+
+  <!-- Vendor -->
+  <project path="vendor/certification" name="vendor_certification" remote="parasite-gitlab" revision="14.0" />
+
+</manifest>
