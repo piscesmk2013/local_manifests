@@ -45,9 +45,6 @@
   <project name="device_custom_sepolicy" path="device/custom/sepolicy" remote="pisces" revision="fourteen" />
 
   <!-- External -->
-  <remove-project name="platform/external/aac" />
-  <project path="external/aac" name="external_aac" remote="pisces" revision="fourteen" />
-  
   <remove-project name="platform/external/skia" />
   <project path="external/skia" name="external_skia" remote="pisces" revision="fourteen" />
 
@@ -103,6 +100,9 @@
   <project name="packages_apps_Updates" path="packages/apps/Updates" remote="pisces" revision="fourteen" />
 
   <!-- System -->
+  <remove-project name="platform/system/hardware/interfaces" />
+  <project name="system_hardware_interfaces" path="system/hardware/interfaces" remote="pisces" revision="fourteen" />
+
   <remove-project name="system_core" />
   <project name="system_core" path="system/core" remote="pisces" revision="fourteen" />
 
