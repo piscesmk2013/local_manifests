@@ -74,10 +74,6 @@
   <remove-project name="platform/external/zlib" />
   <project path="external/zlib" name="external_zlib-ng" remote="yaap" revision="fourteen" clone-depth="1" />
 
-  <!-- Frameworks-->
-  <remove-project name="frameworks_opt_net_ims" />
-  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="yaap" revision="fourteen" clone-depth="1" />
-
   <!-- Hardware -->
   <project path="hardware/qcom-caf/bt" name="hardware_qcom-caf_bt" remote="yaap" revision="fourteen" clone-depth="1" />
 
