@@ -8,7 +8,7 @@
 
   <!-- Build -->
   <remove-project name="platform/build/bazel" />
-  <project path="build/bazel" name="build_bazel" remote="yaap" clone-depth="1" >
+  <project path="build/bazel" name="build_bazel" remote="yaap" revision="fourteen" clone-depth="1" >
     <linkfile src="bazel.WORKSPACE" dest="WORKSPACE" />
     <linkfile src="bazel.BUILD" dest="BUILD" />
   </project>
