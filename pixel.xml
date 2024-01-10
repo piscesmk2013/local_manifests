@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="pisces"
-          fetch="ssh://git@github.com/piscesmk2013" />
+          fetch="ssh://git@ssh.github.com:443/piscesmk2013" />
 
   <!-- General -->
   <remove-project name="art" />
@@ -56,6 +56,9 @@
 
   <remove-project name="system_memory_lmkd" />
   <project path="system/memory/lmkd" name="system_memory_lmkd" remote="pisces" revision="fourteen" clone-depth="1" />
+
+  <remove-project name="platform/external/zlib" />
+  <project path="external/zlib" name="external_zlib-ng" remote="pisces" revision="fourteen" />
 
   <!-- Frameworks -->
   <remove-project name="frameworks_av" />

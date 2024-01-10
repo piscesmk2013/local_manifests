@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="yaap"
-          fetch="ssh://git@github.com/yaap" />
+          fetch="ssh://git@ssh.github.com:443/yaap" />
 
   <remote name="gitlab"
           fetch="https://gitlab.com" />
+
+  <!-- Build -->
+  <remove-project name="platform/build/bazel" />
+  <project path="build/bazel" name="build_bazel" remote="yaap" clone-depth="1" >
+    <linkfile src="bazel.WORKSPACE" dest="WORKSPACE" />
+    <linkfile src="bazel.BUILD" dest="BUILD" />
+  </project>
 
   <!-- External -->
   <remove-project name="platform/external/arm-optimized-routines" />
@@ -47,9 +54,6 @@
   <remove-project name="platform/external/rust/cxx" />
   <project path="external/rust/cxx" name="external_rust_cxx" remote="yaap" revision="fourteen" clone-depth="1" />
 
-  <remove-project name="platform/external/skia" />
-  <project path="external/skia" name="external_skia" remote="yaap" revision="fourteen" clone-depth="1" />
-
   <remove-project name="external_json-c" />
   <project path="external/json-c" name="external_json-c" remote="yaap" revision="fourteen" clone-depth="1" />
 -->
@@ -71,9 +75,6 @@
   <remove-project name="platform/external/vixl" />
   <project path="external/vixl" name="external_vixl" remote="yaap" revision="fourteen" clone-depth="1" />
 
-  <remove-project name="platform/external/zlib" />
-  <project path="external/zlib" name="external_zlib-ng" remote="yaap" revision="fourteen" clone-depth="1" />
-
   <!-- Hardware -->
   <project path="hardware/qcom-caf/bt" name="hardware_qcom-caf_bt" remote="yaap" revision="fourteen" clone-depth="1" />
 
@@ -87,6 +88,9 @@
 
   <remove-project name="platform/packages/providers/TelephonyProvider" />
   <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <remove-project name="platform/packages/modules/Virtualization" />
+  <project path="packages/modules/Virtualization" name="packages_modules_Virtualization" remote="yaap" revision="fourteen" clone-depth="1" />
 
 <!--
   <remove-project name="platform/packages/services/Iwlan" />
