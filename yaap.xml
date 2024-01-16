@@ -23,6 +23,9 @@
   <remove-project name="platform/external/exfatprogs" />
   <project path="external/exfatprogs" name="external_exfatprogs" remote="yaap" revision="fourteen" clone-depth="1" />
 
+  <remove-project name="platform/external/libpng" />
+  <project path="external/libpng" name="external_libpng" remote="yaap" revision="fourteen" clone-depth="1" />
+
 <!--
   <remove-project name="platform/external/elfutils" />
   <project path="external/elfutils" name="external_elfutils" remote="yaap" revision="fourteen" clone-depth="1" />
@@ -38,9 +41,6 @@
 
   <remove-project name="platform/external/harfbuzz_ng" />
   <project path="external/harfbuzz_ng" name="external_harfbuzz_ng" remote="yaap" revision="fourteen" clone-depth="1" />
-
-  <remove-project name="platform/external/libpng" />
-  <project path="external/libpng" name="external_libpng" remote="yaap" revision="fourteen" clone-depth="1" />
 
   <remove-project name="platform/external/libxml2" />
   <project path="external/libxml2" name="external_libxml2" remote="yaap" revision="fourteen" clone-depth="1" />
