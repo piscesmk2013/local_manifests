@@ -45,20 +45,21 @@
   <project name="device_custom_sepolicy" path="device/custom/sepolicy" remote="pisces" revision="fourteen" />
 
   <!-- External -->
+
+  <remove-project name="external_dtc" />
+  <project name="external_dtc" path="external/dtc" remote="pisces" revision="fourteen" />
+
   <remove-project name="platform/external/skia" />
-  <project path="external/skia" name="external_skia" remote="pisces" revision="fourteen" />
+  <project name="external_skia" path="external/skia" remote="pisces" revision="fourteen" />
 
   <remove-project name="platform/external/sqlite" />
-  <project path="external/sqlite" name="external_sqlite" remote="pisces" revision="fourteen" />
+  <project name="external_sqlite" path="external/sqlite" remote="pisces" revision="fourteen" />
 
   <remove-project name="external_tinycompress" />
   <project name="external_tinycompress" path="external/tinycompress" remote="pisces" revision="fourteen" />
 
-  <remove-project name="system_memory_lmkd" />
-  <project path="system/memory/lmkd" name="system_memory_lmkd" remote="pisces" revision="fourteen" clone-depth="1" />
-
   <remove-project name="platform/external/zlib" />
-  <project path="external/zlib" name="external_zlib-ng" remote="pisces" revision="fourteen" />
+  <project name="external_zlib-ng" path="external/zlib" remote="pisces" revision="fourteen" />
 
   <!-- Frameworks -->
   <remove-project name="frameworks_av" />
@@ -122,6 +123,9 @@
   <remove-project name="system_sepolicy" />
   <project name="system_sepolicy" path="system/sepolicy" remote="pisces" revision="fourteen" />
 
+  <remove-project name="system_memory_lmkd" />
+  <project name="system_memory_lmkd" path="system/memory/lmkd" remote="pisces" revision="fourteen" clone-depth="1" />
+
   <remove-project name="platform/system/linkerconfig" />
   <project name="system_linkerconfig" path="system/linkerconfig" remote="pisces" revision="fourteen" />
 
@@ -130,10 +134,10 @@
 
   <!-- Vendor -->
   <remove-project name="vendor_aosp" />
-  <project path="vendor/aosp" name="vendor_aosp" remote="pisces" revision="fourteen" />
+  <project name="vendor_aosp" path="vendor/aosp" remote="pisces" revision="fourteen" />
 
   <remove-project name="vendor_custom-preference" />
-  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="pisces" revision="fourteen" />
+  <project name="vendor_custom-preference" path="vendor/custom-preference" remote="pisces" revision="fourteen" />
 
   <remove-project name="vendor_qcom_opensource_data-ipa-cfg-mgr-legacy-um" />
   <project name="vendor_qcom_opensource_data-ipa-cfg-mgr-legacy-um" path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um" remote="pisces" revision="fourteen" />

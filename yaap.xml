@@ -61,6 +61,9 @@
   <remove-project name="platform/external/libjpeg-turbo" />
   <project path="external/libjpeg-turbo" name="external_libjpeg-turbo" remote="yaap" revision="fourteen" clone-depth="1" />
 
+  <remove-project name="platform/external/open-dice" />
+  <project path="external/open-dice" name="external_open-dice" remote="yaap" revision="fourteen" clone-depth="1" />
+
   <remove-project name="platform/external/jemalloc_new" />
   <project path="external/jemalloc_new" name="external_jemalloc_new" remote="yaap" revision="fourteen" clone-depth="1" />
 
@@ -74,6 +77,9 @@
 
   <remove-project name="platform/external/vixl" />
   <project path="external/vixl" name="external_vixl" remote="yaap" revision="fourteen" clone-depth="1" />
+
+  <remove-project name="platform/external/zstd" />
+  <project path="external/zstd" name="external_zstd" remote="yaap" revision="fourteen" clone-depth="1" />
 
   <!-- Hardware -->
   <project path="hardware/qcom-caf/bt" name="hardware_qcom-caf_bt" remote="yaap" revision="fourteen" clone-depth="1" />
